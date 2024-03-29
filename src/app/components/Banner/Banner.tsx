@@ -1,21 +1,12 @@
 import Image from "next/image";
 import SubscribeButton from "../SubscribeButton/SubscribeButton";
-import ProductCard from "../ProductCard/ProductCard";
 import bg from "./../../../../public/bg-banner.webp";
-import Slider from "@ant-design/react-slick";
+import { ProductsCarousel } from "../ProductsCarousel/ProductsCarousel";
 
 export const Banner = () => {
-  var settings = {
-    dots: true,
-    arrows: false,
-    infinite: false,
-    slidesToShow: 1.8,
-    slidesToScroll: 1,
-  };
-
   return (
     <div
-      className="bg-banner"
+      className="bg-banner mb-16"
       style={{
         backgroundImage: `url(${bg.src})`,
         width: "100%",
@@ -42,10 +33,7 @@ export const Banner = () => {
         </h2>
       </div>
 
-      <Slider {...settings}>
-        <ProductCard name="500" price={89} />
-        <ProductCard name="600" price={89} />
-      </Slider>
+      <ProductsCarousel />
     </div>
   );
 };
