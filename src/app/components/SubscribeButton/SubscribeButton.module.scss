@@ -1,0 +1,38 @@
+.subscribeButton {
+  background: linear-gradient(90deg, #40D802 0%, #90D604 100%);
+  box-shadow: 0px 0px 10.2px #90D604;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+
+.subscribeButton::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 10px;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px #40D802, 0 0 10px #40D802, 0 0 20px #40D802;
+  }
+  to {
+    box-shadow: 0 0 10 #40D802, 0 0 20px #40D802, 0 0 30px #40D802;
+  }
+}
+
+.whatsappIcon {
+  margin-right: 5px;
+}
