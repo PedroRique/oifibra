@@ -1,0 +1,13 @@
+.neonBg {
+    height: 250px;
+    width: 100%;
+    background-position: left;
+}
+.logoImage {
+  width: 125px;
+  height: auto;
+
+  @media screen and (min-width: 1024px) {
+    width: 250px;
+  }
+}

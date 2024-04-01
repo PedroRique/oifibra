@@ -15,7 +15,7 @@ export const ProductsCarousel = () => {
       setCurrentSlide(next);
     },
     customPaging: (i: number) => {
-      if (i === 3) return <></>;
+      if (i === products.length) return <></>;
       return (
         <div
           className="mt-4 ml-4"
@@ -46,12 +46,35 @@ export const ProductsCarousel = () => {
       },
     ],
   };
+
+  const products = [
+    {
+      name: 'oi fibra start',
+      mega: 200,
+      price: 79,
+    },
+    {
+      name: 'oi fibra',
+      mega: 500,
+      price: 89,
+    },
+    {
+      name: 'oi fibra',
+      mega: 600,
+      price: 109,
+    },
+    {
+      name: 'oi fibra x',
+      mega: 600,
+      price: 149,
+    },
+  ];
   return (
     <div className="md:container">
       <Slider {...settings}>
-        <ProductCard name="500" price={89} />
-        <ProductCard name="600" price={89} />
-        <ProductCard name="600" price={89} />
+        {products.map((product, i) => (
+          <ProductCard key={i} {...product}/>
+        ))}
         <div></div>
       </Slider>
     </div>

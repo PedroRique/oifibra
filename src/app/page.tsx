@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import { Banner } from "./components/Banner/Banner";
 import { Devices } from "./components/Devices/Devices";
 import { Benefits } from "./components/Benefits/Benefits";
+import { Footer } from "./components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -12,6 +13,8 @@ export default function Home() {
       <Devices />
 
       <Benefits />
+
+      <Footer />
     </main>
   );
 }

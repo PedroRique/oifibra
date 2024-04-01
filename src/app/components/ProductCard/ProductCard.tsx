@@ -5,15 +5,16 @@ import SubscribeButton from "../SubscribeButton/SubscribeButton";
 interface ProductCardProps {
   name: string;
   price: number;
+  mega: number;
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({ name, price }) => {
+const ProductCard: React.FC<ProductCardProps> = ({ name, price, mega }) => {
   return (
     <div className="ml-4 max-w-md text-center font-bold">
       <div className={`${styles.productCard} flex flex-col gap-4 items-center rounded-lg p-4`}>
-        <p className="md:text-2xl">oi fibra start</p>
+        <p className="md:text-2xl">{name}</p>
         <div>
-          <h2 className={`text-6xl md:text-8xl ${styles.megaQtd}`} data-blur-value={name}>{name}</h2>
+          <h2 className={`text-6xl md:text-8xl ${styles.megaQtd}`}>{mega}</h2>
           <h2 className="text-4xl md:text-6xl">Mega</h2>
         </div>
 
