@@ -12,8 +12,8 @@ const SubscribeButton: React.FC<{ fullWidth?: boolean; label?: string }> = ({
         fullWidth && " w-full"
       }`}
     >
-      <FaWhatsapp className={styles.whatsappIcon} />
-      <span>{label}</span>
+      <FaWhatsapp className={`${styles.whatsappIcon} md:text-2xl`} />
+      <span className="md:text-2xl font-normal">{label}</span>
     </button>
   );
 };

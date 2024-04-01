@@ -20,19 +20,19 @@ export const Devices = () => {
     >
       <BrandsLogos />
 
-      <div className="flex flex-col justify-center my-8 p-8">
+      <div className="flex flex-col justify-center my-8 p-8 mb:p-16">
         <Image
-          className={`${styles.devicesImage} z-10 mb-8`}
-          width={250}
-          height={70}
+          className={`${styles.devicesImage} z-10 mb-8 lg:w-2/4 md:w-3/4 w-full`}
+          width={912}
+          height={549}
           priority
-          src="/devices.png"
+          src="/devices-lg.png"
           alt="Dispositivos com aplicativos"
         />
 
-        <div className="z-10">
-          <p className={styles.subtext}>Oi Fibra, a internet 100% fibra</p>
-          <h2 className="text-3xl font-bold mb-4 text-balance">
+        <div className="container z-10">
+          <p className={`${styles.subtext} md:text-4xl`}>Oi Fibra, a internet 100% fibra</p>
+          <h2 className="text-3xl md:text-6xl font-bold mb-4 text-balance">
             Extraia o máximo da sua internet
           </h2>
 

@@ -20,6 +20,26 @@
     align-self: flex-end;
   }
 
+  @media screen and (min-width: 768px) {
+    &.benefitImageRight,
+    &.benefitImageLeft
+     {
+      width: 500px;
+      height: 300px;
+      border-radius: 8px;
+      border: 2px solid #40d802;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    &.benefitImageRight,
+    &.benefitImageLeft
+     {
+      width: 800px;
+      height: 400px;
+    }
+  }
+
   &::before {
     content: "";
     width: 100%;
@@ -31,11 +51,4 @@
     background: linear-gradient(90deg, #3fd8024a 0%, #90d6045b 100%);
     border-radius: 8px;
   }
-
-  //   /* On screens that are 992px or less, set the background color to blue */
-  //   @media screen and (max-width: 992px) {
-  //     body {
-  //       background-color: blue;
-  //     }
-  //   }
 }

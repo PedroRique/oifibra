@@ -19,8 +19,8 @@ export const Benefits = () => {
   ];
 
   return (
-    <div className="md:container flex flex-col">
-      <h1 className="headline text-center text-2xl mb-8">
+    <div className="md:container flex flex-col py-16">
+      <h1 className="headline text-center text-2xl md:text-5xl mb-8">
         PARA CADA NECESSIDADE, <br />
         <span className="text-[#FBD84B]">UM PLANO OI FIBRA</span>
       </h1>
@@ -38,8 +38,8 @@ export const Benefits = () => {
             ></div>
 
             <div className="p-8">
-              <h2 className="text-2xl font-bold">{benefit.title}</h2>
-              <p className="text-sm font-light">{benefit.description}</p>
+              <h2 className="text-2xl md:text-4xl lg:text-5xl md:mb-8 font-bold">{benefit.title}</h2>
+              <p className="text-sm md:text-2xl lg:text-3xl font-light">{benefit.description}</p>
             </div>
           </div>
         );

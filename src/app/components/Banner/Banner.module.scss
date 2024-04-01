@@ -1,7 +1,6 @@
-
-
 .bannerBg {
     position: relative;
+    background-size: cover;
     &::before {
         content: '';
         width: 100%;
@@ -10,5 +9,18 @@
         position: absolute;
         background: rgba(0, 0, 0, 0.5);
         z-index: 0;
+    }
+
+    @media screen and (min-width: 1024px) {
+        background-size: contain;
+    }
+}
+
+.logoImage {
+    width: 125px;
+    height: auto;
+
+    @media screen and (min-width: 1024px) {
+        width: 250px;
     }
 }

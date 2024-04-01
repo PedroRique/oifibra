@@ -7,21 +7,20 @@ import styles from "./Banner.module.scss";
 export const Banner = () => {
   return (
     <div
-      className={`bg-banner mb-16 ${styles.bannerBg}`}
+      className={`pb-16 mb-16 md:mb-32 ${styles.bannerBg}`}
       style={{
         backgroundImage: `url(${bg.src})`,
         width: "100%",
         height: "100%",
         backgroundPosition: "top center",
         backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
       }}
     >
       <div className="container z-10">
         <div className="flex items-center justify-between py-8">
           <Image
-            className="z-10"
-            width={120}
+            className={`${styles.logoImage} z-10`}
+            width={125}
             height={36}
             priority
             src="/oi-logo.png"
@@ -30,7 +29,7 @@ export const Banner = () => {
 
           <SubscribeButton />
         </div>
-        <h2 className="relative text-3xl mb-8 mt-32 z-10 font-[simplonbp]">
+        <h2 className="relative text-balance text-4xl md:text-6xl mb-8 mt-32 md:mt-64 z-10 font-[simplonbp]">
           Escolha a fibra que se conecta com você
         </h2>
       </div>
