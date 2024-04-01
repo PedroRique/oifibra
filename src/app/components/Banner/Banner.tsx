@@ -1,6 +1,6 @@
 import Image from "next/image";
 import SubscribeButton from "../SubscribeButton/SubscribeButton";
-import bg from "./../../../../public/bg-banner.webp";
+import bg from "./../../../../public/bg-banner.png";
 import { ProductsCarousel } from "../ProductsCarousel/ProductsCarousel";
 import styles from "./Banner.module.scss";
 
