@@ -3,7 +3,28 @@
 }
 
 .devicesImage {
-    width: auto;
     height: auto;
     align-self: center;
+}
+
+.devicesBg {
+    position: relative;
+    &::before {
+        content: '';
+        width: 100%;
+        top: 0;
+        height: 100%;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 0;
+    }
+    &::after {
+        content: '';
+        top: 0;
+        width: 100%;
+        height: calc(100% + 10px);
+        position: absolute;
+        background: linear-gradient(transparent 90%, #000000 98%);
+        z-index: 0;
+    }
 }

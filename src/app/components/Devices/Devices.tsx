@@ -7,6 +7,7 @@ import styles from "./Devices.module.scss";
 export const Devices = () => {
   return (
     <div
+      className={styles.devicesBg}
       style={{
         backgroundImage: `url(${bg.src})`,
         width: "100%",
@@ -20,7 +21,7 @@ export const Devices = () => {
 
       <div className="flex flex-col justify-center my-8 p-8">
         <Image
-          className={styles.devicesImage}
+          className={`${styles.devicesImage} z-10 mb-8`}
           width={250}
           height={70}
           priority
@@ -28,9 +29,11 @@ export const Devices = () => {
           alt="Dispositivos com aplicativos"
         />
 
-        <div>
+        <div className="z-10">
           <p className={styles.subtext}>Oi Fibra, a internet 100% fibra</p>
-          <h2 className="text-3xl text-bold mb-4">Extraia o máximo da sua internet</h2>
+          <h2 className="text-3xl text-bold mb-4">
+            Extraia o máximo da sua internet
+          </h2>
 
           <SubscribeButton />
         </div>
