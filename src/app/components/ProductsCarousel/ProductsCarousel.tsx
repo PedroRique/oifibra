@@ -9,7 +9,7 @@ export const ProductsCarousel = () => {
     dots: true,
     arrows: false,
     infinite: false,
-    slidesToShow: 1.8,
+    slidesToShow: 4,
     slidesToScroll: 1,
     beforeChange: (prev: number, next: number) => {
       setCurrentSlide(next);
@@ -23,19 +23,37 @@ export const ProductsCarousel = () => {
             height: 5,
             width: 25,
             borderRadius: 2,
-            background: 'white',
+            background: "white",
             opacity: i === currentSlide ? 1 : 0.5,
           }}
         ></div>
       );
     },
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1.8,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
-    <Slider {...settings}>
-      <ProductCard name="500" price={89} />
-      <ProductCard name="600" price={89} />
-      <ProductCard name="600" price={89} />
-      <div></div>
-    </Slider>
+    <div className="md:container">
+      <Slider {...settings}>
+        <ProductCard name="500" price={89} />
+        <ProductCard name="600" price={89} />
+        <ProductCard name="600" price={89} />
+        <div></div>
+      </Slider>
+    </div>
   );
 };
