@@ -2,7 +2,10 @@ import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import styles from "./SubscribeButton.module.scss";
 
-const SubscribeButton: React.FC<{ fullWidth?: boolean }> = ({ fullWidth = false }) => {
+const SubscribeButton: React.FC<{ fullWidth?: boolean; label?: string }> = ({
+  fullWidth = false,
+  label = "ASSINAR",
+}) => {
   return (
     <button
       className={`${styles.subscribeButton} flex items-center justify-center ${
@@ -10,7 +13,7 @@ const SubscribeButton: React.FC<{ fullWidth?: boolean }> = ({ fullWidth = false 
       }`}
     >
       <FaWhatsapp className={styles.whatsappIcon} />
-      <span>ASSINAR</span>
+      <span>{label}</span>
     </button>
   );
 };
