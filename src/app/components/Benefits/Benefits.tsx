@@ -20,7 +20,7 @@ export const Benefits = () => {
 
   return (
     <div className="md:container flex flex-col">
-      <h1 className="font-bold text-center text-2xl mb-8">
+      <h1 className="headline text-center text-2xl mb-8">
         PARA CADA NECESSIDADE, <br />
         <span className="text-[#FBD84B]">UM PLANO OI FIBRA</span>
       </h1>

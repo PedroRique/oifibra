@@ -30,7 +30,7 @@ export const Banner = () => {
 
           <SubscribeButton />
         </div>
-        <h2 className="relative text-3xl mb-8 mt-32 z-10">
+        <h2 className="relative text-3xl mb-8 mt-32 z-10 font-[simplonbp]">
           Escolha a fibra que se conecta com você
         </h2>
       </div>

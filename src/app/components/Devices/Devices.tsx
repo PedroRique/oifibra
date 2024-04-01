@@ -3,6 +3,7 @@ import { BrandsLogos } from "../BrandsLogos/BrandsLogos";
 import Image from "next/image";
 import SubscribeButton from "../SubscribeButton/SubscribeButton";
 import styles from "./Devices.module.scss";
+import { FaBolt } from "react-icons/fa";
 
 export const Devices = () => {
   return (
@@ -31,11 +32,11 @@ export const Devices = () => {
 
         <div className="z-10">
           <p className={styles.subtext}>Oi Fibra, a internet 100% fibra</p>
-          <h2 className="text-3xl text-bold mb-4">
+          <h2 className="text-3xl font-bold mb-4 text-balance">
             Extraia o máximo da sua internet
           </h2>
 
-          <SubscribeButton />
+          <SubscribeButton label="ASSINAR AGORA" />
         </div>
       </div>
     </div>

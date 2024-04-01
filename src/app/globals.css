@@ -9,7 +9,7 @@
 }
 
 .slick-dots li button::before {
-  content: '';
+  content: "";
   width: 10px;
   height: 2px; /* Adjust as needed */
   background-color: white;
@@ -20,7 +20,7 @@
 }
 
 body {
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
   background: linear-gradient(
       to bottom,
       transparent,
@@ -32,5 +32,55 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .headline {
+    font-family: "simplonhl";
+  }
+}
+
+@layer base {
+  html {
+    font-family: "simplonbp";
+  }
+
+  @font-face {
+    font-family: "simplonbp";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/simplonbp-regular-webfont.ttf);
+  }
+
+  @font-face {
+    font-family: "simplonbp";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(/fonts/simplonbp-medium-webfont.ttf);
+  }
+
+  @font-face {
+    font-family: "simplonbp";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(/fonts/simplonbp-bold-webfont.ttf);
+  }
+
+  @font-face {
+    font-family: "simplonbp";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(/fonts/simplonbp-light-webfont.ttf);
+  }
+
+  @font-face {
+    font-family: "simplonhl";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/simplonoi-headline.ttf);
   }
 }
