@@ -6,7 +6,7 @@ export const BrandsLogos = () => {
 
   return (
     <div className="flex justify-center">
-      <div className="flex flex-wrap gap-4 items-center justify-between w-full px-6">
+      <div className="flex flex-wrap gap-4 items-center justify-between w-full p-6">
         {brands.map((brand, i) => {
           return (
             <Image
