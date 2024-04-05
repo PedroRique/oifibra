@@ -15,6 +15,14 @@
   background-color: white;
 }
 
+.slick-initialized .slick-slide {
+  min-width: 240px;
+}
+
+.slick-track {
+  min-width: 1200px;
+}
+
 .bg-banner {
   min-height: 200px;
 }

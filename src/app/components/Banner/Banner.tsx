@@ -26,6 +26,7 @@ export const Banner = () => {
         height: "100%",
         backgroundPosition: "top center",
         backgroundRepeat: "no-repeat",
+        zIndex: 0,
       }}
     >
       <div className="container z-10">
