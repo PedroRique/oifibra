@@ -3,6 +3,9 @@ import Slider from "@ant-design/react-slick";
 import ProductCard from "../ProductCard/ProductCard";
 import { useState } from "react";
 
+const CREDIT_CARD_CONDITION = 'No cartão de crédito'
+const DEBIT_CARD_CONDITION = 'No cartão de crédito ou débito em conta'
+
 export const ProductsCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   var settings = {
@@ -52,21 +55,31 @@ export const ProductsCarousel = () => {
       name: 'oi fibra start',
       mega: 200,
       price: 79,
+      priceCondition: CREDIT_CARD_CONDITION,
     },
     {
       name: 'oi fibra',
       mega: 500,
       price: 89,
+      priceCondition: DEBIT_CARD_CONDITION,
     },
     {
       name: 'oi fibra',
       mega: 600,
+      priceCondition: DEBIT_CARD_CONDITION,
       price: 109,
     },
     {
-      name: 'oi fibra x',
-      mega: 600,
-      price: 149,
+      name: 'oi fibra',
+      mega: 700,
+      priceCondition: DEBIT_CARD_CONDITION,
+      price: 139,
+    },
+    {
+      name: 'oi fibra',
+      mega: 1000,
+      priceCondition: DEBIT_CARD_CONDITION,
+      price: 189,
     },
   ];
   return (

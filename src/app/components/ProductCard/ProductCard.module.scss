@@ -11,3 +11,11 @@
     -webkit-background-clip: text;
     background-clip: text;
 }
+
+.maxLogo {
+    max-width: 60px;
+
+    @media screen and (min-width: 992px) {
+        max-width: 100px;
+    }
+}
