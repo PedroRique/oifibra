@@ -5,7 +5,6 @@ import Image from "next/image";
 import { FaPlus } from "react-icons/fa";
 
 interface ProductCardProps {
-  name: string;
   price: number;
   mega: number;
   priceCondition: string;
@@ -14,7 +13,6 @@ interface ProductCardProps {
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
-  name,
   price,
   mega,
   priceCondition,
@@ -27,9 +25,8 @@ const ProductCard: React.FC<ProductCardProps> = ({
       <div
         className={`${styles.productCard} flex flex-col gap-4 items-center rounded-lg p-4`}
       >
-        <p className="md:text-2xl">{name}</p>
         <div>
-          <h2 className={`text-6xl md:text-8xl ${styles.megaQtd}`}>
+          <h2 className={`text-7xl md:text-8xl ${styles.megaQtd}`}>
             {mega >= 1000 ? mega / 1000 : mega}
           </h2>
           <h2 className="text-4xl md:text-6xl">

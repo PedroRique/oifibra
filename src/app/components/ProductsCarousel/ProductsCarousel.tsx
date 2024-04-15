@@ -52,35 +52,30 @@ export const ProductsCarousel = () => {
 
   const products = [
     {
-      name: 'oi fibra start',
       mega: 200,
       price: 79,
       priceCondition: CREDIT_CARD_CONDITION,
       tag: 'MENOR PREÇO'
     },
     {
-      name: 'oi fibra',
       mega: 500,
       price: 89,
       priceCondition: DEBIT_CARD_CONDITION,
       tag: 'MELHOR OFERTA'
     },
     {
-      name: 'oi fibra',
       mega: 600,
       priceCondition: DEBIT_CARD_CONDITION,
       price: 109,
       tryPeriod: 3,
     },
     {
-      name: 'oi fibra',
       mega: 700,
       priceCondition: DEBIT_CARD_CONDITION,
       price: 139,
       tryPeriod: 6,
     },
     {
-      name: 'oi fibra',
       mega: 1000,
       priceCondition: DEBIT_CARD_CONDITION,
       price: 189,
