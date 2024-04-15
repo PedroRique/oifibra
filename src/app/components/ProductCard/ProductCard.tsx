@@ -9,6 +9,7 @@ interface ProductCardProps {
   price: number;
   mega: number;
   priceCondition: string;
+  tryPeriod?: number;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
@@ -16,6 +17,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   price,
   mega,
   priceCondition,
+  tryPeriod,
 }) => {
   return (
     <div className="ml-4 max-w-md text-center font-bold">
@@ -33,15 +35,22 @@ const ProductCard: React.FC<ProductCardProps> = ({
         </div>
 
         {mega >= 600 && (
-          <div className="flex items-center justify-center gap-4">
-            <FaPlus />
-            <Image
-              className={styles.maxLogo}
-              width={100}
-              height={20}
-              src={"/logos/max.svg"}
-              alt="Logo Streaming MAX"
-            />
+          <div className="flex flex-col items-center">
+            <div className="flex items-center justify-center gap-4">
+              <FaPlus />
+              <Image
+                className={styles.maxLogo}
+                width={100}
+                height={20}
+                src={"/logos/max.svg"}
+                alt="Logo Streaming MAX"
+              />
+            </div>
+            {tryPeriod && (
+              <p className="text-balance font-normal text-[12px] md:text-sm mt-1">
+                por {tryPeriod} meses
+              </p>
+            )}
           </div>
         )}
 
@@ -57,7 +66,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
             </div>
           </div>
 
-          <span className="text-balance font-medium">{priceCondition}</span>
+          <p className="text-balance font-normal text-[12px] md:text-sm">
+            {priceCondition}
+          </p>
         </div>
 
         <div className="w-full px-2">

@@ -68,18 +68,21 @@ export const ProductsCarousel = () => {
       mega: 600,
       priceCondition: DEBIT_CARD_CONDITION,
       price: 109,
+      tryPeriod: 3,
     },
     {
       name: 'oi fibra',
       mega: 700,
       priceCondition: DEBIT_CARD_CONDITION,
       price: 139,
+      tryPeriod: 6,
     },
     {
       name: 'oi fibra',
       mega: 1000,
       priceCondition: DEBIT_CARD_CONDITION,
       price: 189,
+      tryPeriod: 12,
     },
   ];
   return (

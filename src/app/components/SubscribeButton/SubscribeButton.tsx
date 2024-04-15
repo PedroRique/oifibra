@@ -1,11 +1,17 @@
+'use client'
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import styles from "./SubscribeButton.module.scss";
+import { openWpp } from "@/app/utils";
 
-const SubscribeButton: React.FC<{ fullWidth?: boolean; label?: string, onClick?: () => void }> = ({
+const SubscribeButton: React.FC<{
+  fullWidth?: boolean;
+  label?: string;
+  onClick?: () => void;
+}> = ({
   fullWidth = false,
   label = "ASSINAR",
-  onClick,
+  onClick = () => openWpp,
 }) => {
   return (
     <button
