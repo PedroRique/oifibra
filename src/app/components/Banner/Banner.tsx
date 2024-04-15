@@ -27,6 +27,7 @@ export const Banner = () => {
         height: "100%",
         backgroundPosition: "top center",
         backgroundRepeat: "no-repeat",
+        backgroundSize: 'cover',
         zIndex: 0,
       }}
     >
