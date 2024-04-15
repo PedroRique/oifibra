@@ -10,6 +10,7 @@ interface ProductCardProps {
   mega: number;
   priceCondition: string;
   tryPeriod?: number;
+  tag?: string;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
@@ -18,9 +19,11 @@ const ProductCard: React.FC<ProductCardProps> = ({
   mega,
   priceCondition,
   tryPeriod,
+  tag,
 }) => {
   return (
-    <div className="ml-4 max-w-md text-center font-bold">
+    <div className="ml-4 max-w-md text-center font-bold relative pt-7">
+      {tag && <div className={`absolute ${styles.cardTag}`}>{tag}</div>}
       <div
         className={`${styles.productCard} flex flex-col gap-4 items-center rounded-lg p-4`}
       >

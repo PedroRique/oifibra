@@ -56,12 +56,14 @@ export const ProductsCarousel = () => {
       mega: 200,
       price: 79,
       priceCondition: CREDIT_CARD_CONDITION,
+      tag: 'MENOR PREÇO'
     },
     {
       name: 'oi fibra',
       mega: 500,
       price: 89,
       priceCondition: DEBIT_CARD_CONDITION,
+      tag: 'MELHOR OFERTA'
     },
     {
       name: 'oi fibra',
