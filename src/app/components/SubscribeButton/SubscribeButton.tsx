@@ -11,7 +11,9 @@ const SubscribeButton: React.FC<{
 }> = ({
   fullWidth = false,
   label = "ASSINAR",
-  onClick = () => openWpp,
+  onClick = () => {
+    openWpp()
+  },
 }) => {
   return (
     <button

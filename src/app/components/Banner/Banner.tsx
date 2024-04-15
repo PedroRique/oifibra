@@ -6,16 +6,17 @@ import { ProductsCarousel } from "../ProductsCarousel/ProductsCarousel";
 import styles from "./Banner.module.scss";
 import { FaWhatsapp, FaPhone, FaChevronRight, FaTimes } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import { openWpp } from "@/app/utils";
 
 export const Banner = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isByPhone, setIsByPhone] = useState(false);
 
   useEffect(() => {
-    if(isModalOpen) {
-      setIsByPhone(false)
+    if (isModalOpen) {
+      setIsByPhone(false);
     }
-  }, [isModalOpen])
+  }, [isModalOpen]);
 
   return (
     <div
@@ -59,7 +60,12 @@ export const Banner = () => {
             Escolha como deseja assinar:
           </h2>
 
-          <div className="flex items-center">
+          <div
+            className="flex items-center cursor-pointer"
+            onClick={() => {
+              openWpp();
+            }}
+          >
             <FaWhatsapp
               className={`mr-4 text-3xl md:text-2xl w-8`}
               color="#40D802"
@@ -82,7 +88,7 @@ export const Banner = () => {
               />
               <div className="flex flex-col">
                 <span className="font-bold text-2xl">Ligue para:</span>
-                <span className="text-3xl">0800 123 3123</span>
+                <span className="text-3xl">0800 729 2621</span>
               </div>
             </div>
           ) : (
