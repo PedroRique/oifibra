@@ -5,7 +5,7 @@ import styles from "./Banner.module.scss";
 export const PhoneCall = () => {
   return (
     <div
-      className="flex items-center cursor-pointer"
+      className="text-nowrap flex items-center cursor-pointer"
       onClick={() => {
         openPhone();
       }}
@@ -18,7 +18,7 @@ export const PhoneCall = () => {
         <span className="text-nowrap text-sm md:text-xl">
           Central de vendas:
         </span>
-        <span className="font-bold text-md md:text-2xl">0800 729 2621</span>
+        <span className="text-nowrap font-bold text-md md:text-2xl">0800 729 2621</span>
       </div>
     </div>
   );
