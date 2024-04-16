@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import styles from "./SubscribeButton.module.scss";
@@ -7,12 +7,14 @@ import { openWpp } from "@/app/utils";
 const SubscribeButton: React.FC<{
   fullWidth?: boolean;
   label?: string;
+  iconOnly?: boolean;
   onClick?: () => void;
 }> = ({
   fullWidth = false,
   label = "ASSINAR",
+  iconOnly = false,
   onClick = () => {
-    openWpp()
+    openWpp();
   },
 }) => {
   return (
@@ -22,8 +24,8 @@ const SubscribeButton: React.FC<{
       }`}
       onClick={onClick}
     >
-      <FaWhatsapp className={`${styles.whatsappIcon} md:text-2xl`} />
-      <span className="md:text-2xl font-normal">{label}</span>
+      <FaWhatsapp className={`${iconOnly ? 'text-3xl' : 'mr-2'} md:text-2xl md:mr-2`} />
+      <span className="hidden md:flex md:text-2xl font-normal">{label}</span>
     </button>
   );
 };
