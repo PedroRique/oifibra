@@ -24,8 +24,16 @@ const SubscribeButton: React.FC<{
       }`}
       onClick={onClick}
     >
-      <FaWhatsapp className={`${iconOnly ? 'text-3xl' : 'mr-2'} md:text-2xl md:mr-2`} />
-      <span className="hidden md:flex md:text-2xl font-normal">{label}</span>
+      <FaWhatsapp
+        className={`${iconOnly ? "text-3xl" : "mr-2"} md:text-2xl md:mr-2`}
+      />
+      <span
+        className={`${
+          iconOnly ? "hidden" : "flex"
+        } md:flex md:text-2xl font-normal`}
+      >
+        {label}
+      </span>
     </button>
   );
 };
