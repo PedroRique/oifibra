@@ -75,7 +75,7 @@ export default function Home() {
 
                       <div className="separador-detalhe">&nbsp;</div>
 
-                      <p className="mt-4">Desconto de R$ 20</p>
+                      <p className="mt-4 subtitle">Desconto de R$ 20</p>
 
                       <p>
                         Valor mensal reduzido em R$ 20,00/mês pra clientes que
@@ -87,7 +87,7 @@ export default function Home() {
                       </p>
                     </li>
                     <li>
-                      <span>Taxa de Habilitação</span>
+                      <span className="subtitle">Taxa de Habilitação</span>
                       <p>
                         A oferta possui taxa de habilitação grátis mediante
                         permanência de 12 meses. Caso a banda larga seja
@@ -96,18 +96,18 @@ export default function Home() {
                       </p>
                     </li>
                     <li>
-                      <span>Instalação</span>
+                      <span className="subtitle">Instalação</span>
                       <p>
                         O dia da instalação da Oi Fibra será agendado de acordo
                         com as datas e horários disponíveis.
                       </p>
                     </li>
                     <li>
-                      <span>Equipamento</span>
+                      <span className="subtitle">Equipamento</span>
                       <p>O roteador Wi-Fi será entregue em comodato.</p>
                     </li>
                     <li>
-                      <span>Velocidade da Oferta</span>
+                      <span className="subtitle">Velocidade da Oferta</span>
                       <p>
                         <span className="velocidade-title">{planName}</span> de
                         internet: Até
@@ -128,11 +128,11 @@ export default function Home() {
                       </p>
                     </li>
                     <li>
-                      <span>Franquia de dados</span>
+                      <span className="subtitle">Franquia de dados</span>
                       <p>A franquia de dados é ilimitada.</p>
                     </li>
                     <li>
-                      <span>
+                      <span className="subtitle">
                         Informações importantes para uma melhor experiência de
                         navegação
                       </span>
@@ -158,7 +158,7 @@ export default function Home() {
                       </p>
                     </li>
                     <li>
-                      <span>Validade da oferta</span>
+                      <span className="subtitle">Validade da oferta</span>
                       <p>
                         A oferta está com preço promocional e é válida por 12
                         meses a partir da data de adesão e prorrogável
@@ -168,7 +168,7 @@ export default function Home() {
                       </p>
                     </li>
                     <li>
-                      <span>Regulamento da oferta</span>
+                      <span className="subtitle">Regulamento da oferta</span>
                       <p>
                         <span>
                           <a
@@ -182,7 +182,7 @@ export default function Home() {
                       </p>
                     </li>
                     <li>
-                      <span>Reajuste anual</span>
+                      <span className="subtitle">Reajuste anual</span>
                       <p>
                         O valor mensal da oferta poderá, a critério da Oi, ser
                         reajustada anualmente de acordo com a variação positiva
