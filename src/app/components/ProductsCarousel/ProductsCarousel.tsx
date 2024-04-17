@@ -1,12 +1,16 @@
 "use client";
 import Slider from "@ant-design/react-slick";
-import ProductCard from "../ProductCard/ProductCard";
+import ProductCard, { Plan } from "../ProductCard/ProductCard";
 import { useState } from "react";
 
-const CREDIT_CARD_CONDITION = 'No cartão de crédito'
-const DEBIT_CARD_CONDITION = 'No cartão de crédito ou débito em conta'
+const CREDIT_CARD_CONDITION = "No cartão de crédito";
+const DEBIT_CARD_CONDITION = "No cartão de crédito ou débito em conta";
 
-export const ProductsCarousel = () => {
+export const ProductsCarousel = ({
+  onPlanDetailsClick,
+}: {
+  onPlanDetailsClick: (plan: Plan) => void;
+}) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   var settings = {
     dots: true,
@@ -55,13 +59,13 @@ export const ProductsCarousel = () => {
       mega: 200,
       price: 79,
       priceCondition: CREDIT_CARD_CONDITION,
-      tag: 'MENOR PREÇO'
+      tag: "MENOR PREÇO",
     },
     {
       mega: 500,
       price: 89,
       priceCondition: DEBIT_CARD_CONDITION,
-      tag: 'MELHOR OFERTA'
+      tag: "MELHOR OFERTA",
     },
     {
       mega: 600,
@@ -86,7 +90,7 @@ export const ProductsCarousel = () => {
     <div className="md:container">
       <Slider {...settings}>
         {products.map((product, i) => (
-          <ProductCard key={i} {...product}/>
+          <ProductCard key={i} onPlanDetailsClick={onPlanDetailsClick} plan={product} />
         ))}
         <div></div>
       </Slider>

@@ -5,18 +5,17 @@ import SubscribeButton from "../SubscribeButton/SubscribeButton";
 import bg from "./../../../../public/bg-banner.png";
 import styles from "./Banner.module.scss";
 import { PhoneCall } from "./PhoneCall";
+import { Plan } from "../ProductCard/ProductCard";
 
-export const Banner = () => {
+export const Banner = ({ onPlanDetailsClick }: { onPlanDetailsClick: (plan: Plan) => void }) => {
   return (
     <div
       className={`pb-16 mb-16 md:mb-32 ${styles.bannerBg}`}
       style={{
         backgroundImage: `url(${bg.src})`,
         width: "100%",
-        height: "100%",
         backgroundPosition: "top center",
         backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
         zIndex: 0,
       }}
     >
@@ -38,7 +37,7 @@ export const Banner = () => {
         </div>
       </div>
 
-      <ProductsCarousel />
+      <ProductsCarousel onPlanDetailsClick={onPlanDetailsClick}/>
     </div>
   );
 };

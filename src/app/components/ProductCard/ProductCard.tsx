@@ -1,24 +1,28 @@
-import React from "react";
-import styles from "./ProductCard.module.scss";
-import SubscribeButton from "../SubscribeButton/SubscribeButton";
 import Image from "next/image";
+import React from "react";
 import { FaPlus } from "react-icons/fa";
+import SubscribeButton from "../SubscribeButton/SubscribeButton";
+import styles from "./ProductCard.module.scss";
 
-interface ProductCardProps {
+export type Plan = {
   price: number;
   mega: number;
   priceCondition: string;
   tryPeriod?: number;
   tag?: string;
+};
+
+interface ProductCardProps {
+  plan: Plan;
+  onPlanDetailsClick: (plan: any) => void;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
-  price,
-  mega,
-  priceCondition,
-  tryPeriod,
-  tag,
+  plan,
+  onPlanDetailsClick,
 }) => {
+  const { price, mega, priceCondition, tryPeriod, tag } = plan;
+
   return (
     <div className="ml-4 max-w-md text-center font-bold relative pt-7">
       {tag && <div className={`absolute ${styles.cardTag}`}>{tag}</div>}
@@ -71,8 +75,17 @@ const ProductCard: React.FC<ProductCardProps> = ({
           </p>
         </div>
 
-        <div className="w-full px-2">
+        <div className="w-full px-2 flex flex-col">
           <SubscribeButton fullWidth />
+
+          <p
+            className="font-normal mt-2 cursor-pointer self-center transition hover:text-green-400"
+            onClick={() => {
+              onPlanDetailsClick(plan);
+            }}
+          >
+            + detalhes da oferta
+          </p>
         </div>
       </div>
     </div>

@@ -27,8 +27,43 @@
   min-height: 200px;
 }
 
+.details-modal {
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100%;
+  top: 0;
+  padding-top: 50%;
+  position: fixed;
+  background: #00000066;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  overflow-y: scroll;
+}
+
+.details-modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+#plan-details li {
+  border-bottom: 1px solid #40d802;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+}
+
+.link {
+  color: #40d802;
+  border-bottom: 1px solid #40d802;
+}
+
 body {
   color: rgb(255, 255, 255);
+  overflow: hidden;
   background: linear-gradient(
       to bottom,
       transparent,

@@ -8,29 +8,21 @@ export const Footer = () => {
         backgroundColor: "#4D4D4D",
       }}
     >
-      {/* <div
-        className={styles.neonBg}
-        style={{
-          backgroundImage: `url(neonflow.png)`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-        }}
-      ></div> */}
       <div className="container flex flex-col items-center justify-center py-16">
         <p>
           <span>
             Usamos cookies pra melhorar sua experiência de navegação,
-            personalizar conteúdos e anúncios. Pra mais informações, veja nossa{' '}
+            personalizar conteúdos e anúncios. Pra mais informações, veja nossa{" "}
           </span>
           <a
             href="./Aviso%20de%20Privacidade%20-%20Oi%20e%20Agentes%20Autorizados.pdf"
             target="_blank"
           >
-            <span className={styles.link}>Política de Privacidade{' '}</span>
+            <span className="link">Política de Privacidade </span>
           </a>
-          <span>e{' '}</span>
+          <span>e </span>
           <a href="https://www.oi.com.br/internet/regulamento" target="_blank">
-            <span className={styles.link}>Termos de Uso</span>
+            <span className="link">Termos de Uso</span>
           </a>
         </p>
 
