@@ -113,8 +113,10 @@ export default function Home() {
                         internet: Até
                         <span className="velocidade-title">{planName}</span> de
                         download, até
-                        <span className="upload-title">{planName}</span> de
-                        upload.
+                        <span className="upload-title">
+                        {" "}{currentPlan.upload} MEGA
+                        </span>{" "}
+                        de upload.
                         <br />
                         <br />
                         Essas são as velocidades máximas nominais. A velocidade

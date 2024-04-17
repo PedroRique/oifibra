@@ -10,11 +10,12 @@ export type Plan = {
   priceCondition: string;
   tryPeriod?: number;
   tag?: string;
+  upload: number;
 };
 
 interface ProductCardProps {
   plan: Plan;
-  onPlanDetailsClick: (plan: any) => void;
+  onPlanDetailsClick: (plan: Plan) => void;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({

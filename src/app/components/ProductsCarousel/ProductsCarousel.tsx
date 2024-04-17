@@ -54,43 +54,52 @@ export const ProductsCarousel = ({
     ],
   };
 
-  const products = [
+  const products: Plan[] = [
     {
       mega: 200,
       price: 79,
       priceCondition: CREDIT_CARD_CONDITION,
       tag: "MENOR PREÇO",
+      upload: 100,
     },
     {
       mega: 500,
       price: 89,
       priceCondition: DEBIT_CARD_CONDITION,
       tag: "MELHOR OFERTA",
+      upload: 200,
     },
     {
       mega: 600,
       priceCondition: DEBIT_CARD_CONDITION,
       price: 109,
       tryPeriod: 3,
+      upload: 250,
     },
     {
       mega: 700,
       priceCondition: DEBIT_CARD_CONDITION,
       price: 139,
       tryPeriod: 6,
+      upload: 250,
     },
     {
       mega: 1000,
       priceCondition: DEBIT_CARD_CONDITION,
       price: 189,
       tryPeriod: 12,
+      upload: 250,
     },
   ];
   return (
     <div className="md:container">
       <Slider {...settings}>
         {products.map((product, i) => (
-          <ProductCard key={i} onPlanDetailsClick={onPlanDetailsClick} plan={product} />
+          <ProductCard
+            key={i}
+            onPlanDetailsClick={onPlanDetailsClick}
+            plan={product}
+          />
         ))}
         <div></div>
       </Slider>
