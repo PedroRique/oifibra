@@ -8,7 +8,7 @@ export const Benefits = () => {
       img: "watching.png",
       title: "Assista as suas novelas, filmes e séries favoritas.",
       description:
-        "Oi Fibra tem ofertas especiais pra quem ama streamings. Agora, você pode assinar Oi Fibra com Globoplay incluído pra assistir BBB ao vivo 24h, séries, filmes, novelas, documentários, futebol ao vivo, jornalismo, conteúdo infantil e muito mais.",
+        "Oi Fibra tem ofertas especiais pra quem ama streamings. Agora, você pode assinar Oi Fibra com MAX incluído. Assista séries, filmes, novelas, documentários, futebol ao vivo, jornalismo, conteúdo infantil e muito mais.",
     },
     {
       img: "gamer.png",
