@@ -63,7 +63,7 @@ export const ProductsCarousel = ({
       upload: 100,
     },
     {
-      mega: 500,
+      mega: 400,
       price: 89,
       priceCondition: DEBIT_CARD_CONDITION,
       tag: "MELHOR OFERTA",
