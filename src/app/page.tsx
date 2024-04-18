@@ -86,6 +86,37 @@ export default function Home() {
                         suspenso. O desconto é válido por tempo indeterminado.
                       </p>
                     </li>
+                    {currentPlan.tryPeriod && (
+                      <li>
+                        <span className="subtitle">
+                          Oi Fibra com Max por {currentPlan.tryPeriod} meses
+                        </span>
+                        <p>
+                          Tenha internet fibra de {planName} e aproveite os
+                          conteúdos da Max por {currentPlan.tryPeriod} meses.
+                        </p>
+                        <p>
+                          1 ponto Wi-Fi 5 (roteador principal): esse ponto é
+                          potente e dual band, ou seja, tem frequência de rede
+                          de 2,4 GHz (o sinal chega a vários lugares da casa,
+                          mas a velocidade é menor) e de 5 GHz (é mais veloz,
+                          mas não chega aos lugares mais distantes). E ainda
+                          conta com a tecnologia band steering que escolhe de
+                          forma automática a rede com melhor desempenho e
+                          cobertura para você usar a internet Wi-Fi.
+                        </p>
+                        <p>
+                          Max por {currentPlan.tryPeriod} meses: com esse serviço você tem acesso a
+                          todas as marcas da Warner Bros. Discovery, incluindo
+                          HBO, Home &amp; Health, Cartoon Network, TNT,
+                          Discovery, Discovery Kids e muito mais. Após este
+                          período, o cliente que quiser manter o streaming
+                          poderá contratar de forma avulsa pelos canais de
+                          atendimento da Oi.
+                        </p>
+                      </li>
+                    )}
+
                     <li>
                       <span className="subtitle">Taxa de Habilitação</span>
                       <p>
@@ -114,7 +145,8 @@ export default function Home() {
                         <span className="velocidade-title">{planName}</span> de
                         download, até
                         <span className="upload-title">
-                        {" "}{currentPlan.upload} MEGA
+                          {" "}
+                          {currentPlan.upload} MEGA
                         </span>{" "}
                         de upload.
                         <br />

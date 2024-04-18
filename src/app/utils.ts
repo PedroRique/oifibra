@@ -1,5 +1,5 @@
 export const openWpp = (message?: string) => {
-  window.open("https://wa.me/551141070405");
+  window.open("https://wa.me/5511916567343");
 };
 
 export const openPhone = () => {
