@@ -10,6 +10,10 @@
   cursor: pointer;
   outline: none;
   position: relative;
+  
+  * {
+    pointer-events: none;
+  }
 }
 
 .subscribeButton::after {

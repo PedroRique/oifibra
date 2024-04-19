@@ -9,7 +9,9 @@ const SubscribeButton: React.FC<{
   label?: string;
   iconOnly?: boolean;
   onClick?: () => void;
+  dataId: string;
 }> = ({
+  dataId,
   fullWidth = false,
   label = "ASSINAR",
   iconOnly = false,
@@ -22,6 +24,7 @@ const SubscribeButton: React.FC<{
       className={`${styles.subscribeButton} flex items-center justify-center ${
         fullWidth && " w-full"
       }`}
+      data-id={dataId}
       onClick={onClick}
     >
       <FaWhatsapp

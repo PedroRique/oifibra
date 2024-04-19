@@ -46,7 +46,7 @@ export const Benefits = () => {
       })}
 
       <div className="flex items-center justify-center mb-8">
-        <SubscribeButton label="ASSINAR AGORA" />
+        <SubscribeButton label="ASSINAR AGORA" dataId="benefits-wpp-button" />
       </div>
     </div>
   );

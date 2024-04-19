@@ -32,7 +32,7 @@ export const Banner = ({ onPlanDetailsClick }: { onPlanDetailsClick: (plan: Plan
 
           <div className="flex gap-3 md:gap-8">
             <PhoneCall />
-            <SubscribeButton iconOnly />
+            <SubscribeButton iconOnly dataId="header-wpp-button"/>
           </div>
         </div>
       </div>

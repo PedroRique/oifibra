@@ -77,13 +77,14 @@ const ProductCard: React.FC<ProductCardProps> = ({
         </div>
 
         <div className="w-full px-2 flex flex-col">
-          <SubscribeButton fullWidth />
+          <SubscribeButton fullWidth dataId={`card-${plan.mega}-wpp-button`} />
 
           <p
             className="font-normal mt-2 cursor-pointer self-center transition hover:text-green-400"
             onClick={() => {
               onPlanDetailsClick(plan);
             }}
+            data-id={`card-${plan.mega}-details-button`}
           >
             + detalhes da oferta
           </p>

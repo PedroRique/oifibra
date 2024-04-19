@@ -36,7 +36,7 @@ export const Devices = () => {
             Extraia o máximo da sua internet
           </h2>
 
-          <SubscribeButton label="ASSINAR AGORA" />
+          <SubscribeButton label="ASSINAR AGORA" dataId="devices-wpp-button" />
         </div>
       </div>
     </div>
