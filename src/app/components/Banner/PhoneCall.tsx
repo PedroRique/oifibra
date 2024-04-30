@@ -1,8 +1,12 @@
-import { openPhone } from "@/app/utils";
+import { openPhone, showPhone } from "@/app/utils";
 import { FaPhone } from "react-icons/fa";
 import styles from "./Banner.module.scss";
 
 export const PhoneCall = () => {
+  const shouldShowPhone = showPhone();
+
+  if(!shouldShowPhone) return <></>;
+
   return (
     <div
       className={`${styles.phoneButton} text-nowrap flex items-center cursor-pointer`}
