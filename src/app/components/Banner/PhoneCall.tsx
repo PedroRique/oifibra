@@ -5,7 +5,7 @@ import styles from "./Banner.module.scss";
 export const PhoneCall = () => {
   const shouldShowPhone = showPhone();
 
-  if(!shouldShowPhone) return <></>;
+  if(!shouldShowPhone) return <div></div>;
 
   return (
     <div
